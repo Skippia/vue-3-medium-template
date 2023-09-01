@@ -1,0 +1,69 @@
+{
+  "navMenu": {
+    "home": "Домашняя",
+    "services": "Сервисы",
+    "about": "О нас",
+    "blogs": "Блоги",
+    "contacts": "Контакты",
+    "solutions": "Решения",
+    "ourTeam": "Наша команда",
+    "FAQ": "ЧАВО",
+    "language": "Язык",
+    "pricing": "Стоимость",
+    "siteMap": "Карта сайта",
+    "quickLinks": "Быстрые ссылки",
+    "contactInfo": "Контактная информация",
+    "termsOfUs": "Условия соглашения",
+    "privacyPolicy": "Политика приватности",
+    "allRightsReserved": "Все права защищены",
+    "drivingDirections": "Направление движения"
+  },
+  "common": {
+    "button": {
+      "learnMore": "Узнать больше",
+      "discoverMode": "Режим обнаружения",
+      "contactUs": "Связаться с нами",
+      "send": "Отправить",
+      "readMore": "Читать дальше",
+      "watchTheDemo": "Смотреть демо"
+    },
+    "route": {
+      "home": "Домой",
+      "services": "Сервисы",
+      "about": "О нас",
+      "blogs": "Блоги",
+      "contacts": "Контакты"
+    },
+    "projectExecuted": "Выполненных проектов",
+    "satisfiedCustomers": "Удовлетворенных клиентов",
+    "dataManagement": "Управление данными",
+    "benefitsTitle": "Преимущества {company}",
+    "embedAnalytics": "Встроенная аналитика",
+    "accessControl": "Контроль тупа",
+    "dataAnalytics": "Аналитика данных",
+    "testimonials": "Отзывы",
+    "ourBlog": "Наш блог",
+    "machineLearning": "Машинное обучение",
+    "needHelp?": "Нужна помощь?",
+    "howWeCanHelp?": "Как мы можем помочь вам?",
+    "subscribeNewsletter": "Подписаться на нашу рассылку",
+    "yourEmail": "Ваша электронная почта",
+    "success": "Успех",
+    "alert": "Тревога",
+    "warning": "Внимание",
+    "successSubscribed": "Вы успешно подписались!",
+    "statsTitle": "Мы предоставляем сервисы, которые гарантируют успех",
+    "email": "Электронная почта",
+    "phoneNumber": "Номер телефона",
+    "address": "Адрес",
+    "name": "Имя",
+    "theme": "Тема",
+    "message": "Сообщение",
+    "formPlaceholder": {
+      "email": "Контактная почта",
+      "name": "Контактное имя",
+      "theme": "Тема сообщения",
+      "message": "Ваше сообщение"
+    }
+  }
+}

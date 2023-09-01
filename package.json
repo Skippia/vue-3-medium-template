@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "packageManager": "pnpm@8.7.1",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port 3000 --open",
+    "format": "prettier -w -u .",
+    "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .eslintignore --fix .",
+    "typecheck": "vue-tsc --noEmit && tsc --noEmit",
+    "up": "taze major -I",
+    "prepare": "husky install",
+    "prebuild": "rimraf ./dist",
+    "clean:js": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "@vueuse/core": "^10.4.1",
+    "base-64": "^1.0.0",
+    "pinia": "^2.1.6",
+    "qrcode.vue": "^3.4.1",
+    "uuid": "^9.0.0",
+    "vue": "^3.3.4",
+    "vue-i18n": "9",
+    "vue-qrcode-reader": "^5.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.21",
+    "@iconify-json/fluent": "^1.1.33",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
+    "@types/base-64": "^1.0.0",
+    "@types/node": "^20.5.8",
+    "@types/uuid": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "@unocss/eslint-config": "^0.55.4",
+    "@unocss/reset": "^0.55.4",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vue-macros/volar": "^0.14.2",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "execa": "^8.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "pnpm": "^8.7.1",
+    "rimraf": "^5.0.1",
+    "sass": "^1.66.1",
+    "taze": "^0.11.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2",
+    "unocss": "^0.55.4",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
+    "unplugin-vue-macros": "^2.4.14",
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.8"
+  },
+  "lint-staged": {
+    "**/*.{vue,js,ts,html,css,scss}": "npm run format",
+    "src/**/*.{vue,js,ts}": "npm run lint:fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@unocss"
+    ]
+  }
+}

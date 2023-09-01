@@ -1,0 +1,70 @@
+{
+  "navMenu": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "blogs": "Blogs",
+    "contacts": "Contacts",
+    "solutions": "Solutions",
+    "ourTeam": "Our team",
+    "FAQ": "FAQ",
+    "language": "Language",
+    "pricing": "Pricing",
+    "siteMap": "Site map",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact info",
+    "termsOfUs": "Terms of us",
+    "privacyPolicy": "Privacy policy",
+    "allRightsReserved": "All rights reserved",
+    "drivingDirections": "Driving directions"
+  },
+  "common": {
+    "button": {
+      "learnMore": "Learn more",
+      "discoverMode": "Discover mode",
+      "contactUs": "Contact us",
+      "send": "Send",
+      "readMore": "Read more",
+      "watchTheDemo": "Watch the demo"
+    },
+    "projectExecuted": "Project executed",
+    "satisfiedCustomers": "Satisfied customers",
+    "dataManagement": "Data management",
+    "benefitsTitle": "The benefits of {company}",
+    "embedAnalytics": "Embed analytics",
+    "accessControl": "Access control",
+    "dataAnalytics": "Data analytics",
+    "testimonials": "Testimonials",
+    "ourBlog": "Our blog",
+    "machineLearning": "Machine learning",
+    "needHelp?": "Do you need help?",
+    "howWeCanHelp?": "How can we help you?",
+    "subscribeNewsletter": "Subscribe to our newsletter",
+    "yourEmail": "Your email",
+    "success": "Success",
+    "alert": "Alert",
+    "warning": "Warning",
+    "successSubscribed": "You have successfully subscribed!",
+    "statsTitle": "We provide services that guarantee your success",
+    "email": "Email",
+    "phoneNumber": "Phone number",
+    "address": "Address",
+    "name": "Name",
+    "theme": "Theme",
+    "message": "Message",
+    "contact": "Contact",
+    "route": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "blogs": "Blogs",
+      "contacts": "Contacts"
+    },
+    "formPlaceholder": {
+      "email": "Contact email",
+      "name": "Contact name",
+      "theme": "Contact theme",
+      "message": "Your message"
+    }
+  }
+}

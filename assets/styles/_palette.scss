@@ -1,0 +1,314 @@
+html[opacity='fullOpacity'] {
+  --opacity: 1;
+}
+
+html[opacity='halfOpacity'] {
+  --opacity: 0.5;
+}
+
+html[opacity='lowOpacity'] {
+  --opacity: 0.25;
+}
+
+:root {
+  --opacity: 1;
+  --black: 0, 0, 0, var(--opacity);
+  --white: 255, 255, 255, var(--opacity);
+
+  --light-50: 253, 253, 253, var(--opacity);
+  --light-100: 252, 252, 252, var(--opacity);
+  --light-200: 250, 250, 250, var(--opacity);
+  --light-300: 248, 249, 250, var(--opacity);
+  --light-400: 246, 246, 246, var(--opacity);
+  --light-500: 242, 242, 242, var(--opacity);
+  --light-600: 241, 243, 245, var(--opacity);
+  --light-700: 233, 236, 239, var(--opacity);
+  --light-800: 222, 226, 230, var(--opacity);
+  --light-900: 221, 225, 227, var(--opacity);
+
+  --dark-50: 74, 74, 74, var(--opacity);
+  --dark-100: 60, 60, 60, var(--opacity);
+  --dark-200: 50, 50, 50, var(--opacity);
+  --dark-300: 45, 45, 45, var(--opacity);
+  --dark-400: 34, 34, 34, var(--opacity);
+  --dark-500: 31, 31, 31, var(--opacity);
+  --dark-600: 28, 28, 30, var(--opacity);
+  --dark-700: 27, 27, 27, var(--opacity);
+  --dark-800: 24, 24, 24, var(--opacity);
+  --dark-900: 15, 15, 15, var(--opacity);
+
+  --slate-50: 248, 250, 252, var(--opacity);
+  --slate-100: 241, 245, 249, var(--opacity);
+  --slate-200: 226, 232, 240, var(--opacity);
+  --slate-300: 203, 213, 225, var(--opacity);
+  --slate-400: 148, 163, 184, var(--opacity);
+  --slate-500: 100, 116, 139, var(--opacity);
+  --slate-600: 71, 85, 105, var(--opacity);
+  --slate-700: 51, 65, 85, var(--opacity);
+  --slate-800: 30, 41, 59, var(--opacity);
+  --slate-900: 15, 23, 42, var(--opacity);
+
+  --gray-50: 249, 250, 251, var(--opacity);
+  --gray-100: 243, 244, 246, var(--opacity);
+  --gray-200: 229, 231, 235, var(--opacity);
+  --gray-300: 209, 213, 219, var(--opacity);
+  --gray-400: 156, 163, 175, var(--opacity);
+  --gray-500: 107, 114, 128, var(--opacity);
+  --gray-600: 75, 85, 99, var(--opacity);
+  --gray-700: 55, 65, 81, var(--opacity);
+  --gray-800: 31, 41, 55, var(--opacity);
+  --gray-900: 17, 24, 39, var(--opacity);
+
+  --zinc-50: 250, 250, 250, var(--opacity);
+  --zinc-100: 244, 244, 245, var(--opacity);
+  --zinc-200: 228, 228, 231, var(--opacity);
+  --zinc-300: 212, 212, 216, var(--opacity);
+  --zinc-400: 161, 161, 170, var(--opacity);
+  --zinc-500: 113, 113, 122, var(--opacity);
+  --zinc-600: 82, 82, 91, var(--opacity);
+  --zinc-700: 63, 63, 70, var(--opacity);
+  --zinc-800: 39, 39, 42, var(--opacity);
+  --zinc-900: 24, 24, 27, var(--opacity);
+
+  --neutral-50: 250, 250, 250, var(--opacity);
+  --neutral-100: 245, 245, 245, var(--opacity);
+  --neutral-200: 229, 229, 229, var(--opacity);
+  --neutral-300: 212, 212, 212, var(--opacity);
+  --neutral-400: 163, 163, 163, var(--opacity);
+  --neutral-500: 115, 115, 115, var(--opacity);
+  --neutral-600: 82, 82, 82, var(--opacity);
+  --neutral-700: 64, 64, 64, var(--opacity);
+  --neutral-800: 38, 38, 38, var(--opacity);
+  --neutral-900: 23, 23, 23, var(--opacity);
+
+  --stone-50: 250, 250, 249, var(--opacity);
+  --stone-100: 245, 245, 244, var(--opacity);
+  --stone-200: 231, 229, 228, var(--opacity);
+  --stone-300: 214, 211, 209, var(--opacity);
+  --stone-400: 168, 162, 158, var(--opacity);
+  --stone-500: 120, 113, 108, var(--opacity);
+  --stone-600: 87, 83, 78, var(--opacity);
+  --stone-700: 68, 64, 60, var(--opacity);
+  --stone-800: 41, 37, 36, var(--opacity);
+  --stone-900: 28, 25, 23, var(--opacity);
+
+  --red-50: 254, 242, 242, var(--opacity);
+  --red-100: 254, 226, 226, var(--opacity);
+  --red-200: 254, 202, 202, var(--opacity);
+  --red-300: 252, 165, 165, var(--opacity);
+  --red-400: 248, 113, 113, var(--opacity);
+  --red-500: 239, 68, 68, var(--opacity);
+  --red-600: 220, 38, 38, var(--opacity);
+  --red-700: 185, 28, 28, var(--opacity);
+  --red-800: 153, 27, 27, var(--opacity);
+  --red-900: 127, 29, 29, var(--opacity);
+
+  --orange-50: 255, 247, 237, var(--opacity);
+  --orange-100: 255, 237, 213, var(--opacity);
+  --orange-200: 254, 215, 170, var(--opacity);
+  --orange-300: 253, 186, 116, var(--opacity);
+  --orange-400: 251, 146, 60, var(--opacity);
+  --orange-500: 249, 115, 22, var(--opacity);
+  --orange-600: 234, 88, 12, var(--opacity);
+  --orange-700: 194, 65, 12, var(--opacity);
+  --orange-800: 154, 52, 18, var(--opacity);
+  --orange-900: 124, 45, 18, var(--opacity);
+
+  --amber-50: 255, 251, 235, var(--opacity);
+  --amber-100: 254, 243, 199, var(--opacity);
+  --amber-200: 253, 230, 138, var(--opacity);
+  --amber-300: 252, 211, 77, var(--opacity);
+  --amber-400: 251, 191, 36, var(--opacity);
+  --amber-500: 245, 158, 11, var(--opacity);
+  --amber-600: 217, 119, 6, var(--opacity);
+  --amber-700: 180, 83, 9, var(--opacity);
+  --amber-800: 146, 64, 14, var(--opacity);
+  --amber-900: 120, 53, 15, var(--opacity);
+
+  --yellow-50: 254, 252, 232, var(--opacity);
+  --yellow-100: 254, 249, 195, var(--opacity);
+  --yellow-200: 254, 240, 138, var(--opacity);
+  --yellow-300: 253, 224, 71, var(--opacity);
+  --yellow-400: 250, 204, 21, var(--opacity);
+  --yellow-500: 234, 179, 8, var(--opacity);
+  --yellow-600: 202, 138, 4, var(--opacity);
+  --yellow-700: 161, 98, 7, var(--opacity);
+  --yellow-800: 133, 77, 14, var(--opacity);
+  --yellow-900: 113, 63, 18, var(--opacity);
+
+  --lime-50: 247, 254, 231, var(--opacity);
+  --lime-100: 236, 252, 203, var(--opacity);
+  --lime-200: 217, 249, 157, var(--opacity);
+  --lime-300: 190, 242, 100, var(--opacity);
+  --lime-400: 163, 230, 53, var(--opacity);
+  --lime-500: 132, 204, 22, var(--opacity);
+  --lime-600: 101, 163, 13, var(--opacity);
+  --lime-700: 77, 124, 15, var(--opacity);
+  --lime-800: 63, 98, 18, var(--opacity);
+  --lime-900: 54, 83, 20, var(--opacity);
+
+  --green-50: 240, 253, 244, var(--opacity);
+  --green-100: 220, 252, 231, var(--opacity);
+  --green-200: 187, 247, 208, var(--opacity);
+  --green-300: 134, 239, 172, var(--opacity);
+  --green-400: 74, 222, 128, var(--opacity);
+  --green-500: 34, 197, 94, var(--opacity);
+  --green-600: 22, 163, 74, var(--opacity);
+  --green-700: 21, 128, 61, var(--opacity);
+  --green-800: 22, 101, 52, var(--opacity);
+  --green-900: 20, 83, 45, var(--opacity);
+
+  --emerald-50: 236, 253, 245, var(--opacity);
+  --emerald-100: 209, 250, 229, var(--opacity);
+  --emerald-200: 167, 243, 208, var(--opacity);
+  --emerald-300: 110, 231, 183, var(--opacity);
+  --emerald-400: 52, 211, 153, var(--opacity);
+  --emerald-500: 16, 185, 129, var(--opacity);
+  --emerald-600: 5, 150, 105, var(--opacity);
+  --emerald-700: 4, 120, 87, var(--opacity);
+  --emerald-800: 6, 95, 70, var(--opacity);
+  --emerald-900: 6, 78, 59, var(--opacity);
+
+  --teal-50: 240, 253, 250, var(--opacity);
+  --teal-100: 204, 251, 241, var(--opacity);
+  --teal-200: 153, 246, 228, var(--opacity);
+  --teal-300: 94, 234, 212, var(--opacity);
+  --teal-400: 45, 212, 191, var(--opacity);
+  --teal-500: 20, 184, 166, var(--opacity);
+  --teal-600: 13, 148, 136, var(--opacity);
+  --teal-700: 15, 118, 110, var(--opacity);
+  --teal-800: 17, 94, 89, var(--opacity);
+  --teal-900: 19, 78, 74, var(--opacity);
+
+  --cyan-50: 236, 254, 255, var(--opacity);
+  --cyan-100: 207, 250, 254, var(--opacity);
+  --cyan-200: 165, 243, 252, var(--opacity);
+  --cyan-300: 103, 232, 249, var(--opacity);
+  --cyan-400: 34, 211, 238, var(--opacity);
+  --cyan-500: 6, 182, 212, var(--opacity);
+  --cyan-600: 8, 145, 178, var(--opacity);
+  --cyan-700: 14, 116, 144, var(--opacity);
+  --cyan-800: 21, 94, 117, var(--opacity);
+  --cyan-900: 22, 78, 99, var(--opacity);
+
+  --sky-50: 240, 249, 255, var(--opacity);
+  --sky-100: 224, 242, 254, var(--opacity);
+  --sky-200: 186, 230, 253, var(--opacity);
+  --sky-300: 125, 211, 252, var(--opacity);
+  --sky-400: 56, 189, 248, var(--opacity);
+  --sky-500: 14, 165, 233, var(--opacity);
+  --sky-600: 2, 132, 199, var(--opacity);
+  --sky-700: 3, 105, 161, var(--opacity);
+  --sky-800: 7, 89, 133, var(--opacity);
+  --sky-900: 12, 74, 110, var(--opacity);
+
+  --blue-50: 239, 246, 255, var(--opacity);
+  --blue-100: 219, 234, 254, var(--opacity);
+  --blue-200: 191, 219, 254, var(--opacity);
+  --blue-300: 147, 197, 253, var(--opacity);
+  --blue-400: 96, 165, 250, var(--opacity);
+  --blue-500: 59, 130, 246, var(--opacity);
+  --blue-600: 37, 99, 235, var(--opacity);
+  --blue-700: 29, 78, 216, var(--opacity);
+  --blue-800: 30, 64, 175, var(--opacity);
+  --blue-900: 30, 58, 138, var(--opacity);
+
+  --indigo-50: 238, 242, 255, var(--opacity);
+  --indigo-100: 224, 231, 255, var(--opacity);
+  --indigo-200: 199, 210, 254, var(--opacity);
+  --indigo-300: 165, 180, 252, var(--opacity);
+  --indigo-400: 129, 140, 248, var(--opacity);
+  --indigo-500: 99, 102, 241, var(--opacity);
+  --indigo-600: 79, 70, 229, var(--opacity);
+  --indigo-700: 67, 56, 202, var(--opacity);
+  --indigo-800: 55, 48, 163, var(--opacity);
+  --indigo-900: 49, 46, 129, var(--opacity);
+
+  --violet-50: 245, 243, 255, var(--opacity);
+  --violet-100: 237, 233, 254, var(--opacity);
+  --violet-200: 221, 214, 254, var(--opacity);
+  --violet-300: 196, 181, 253, var(--opacity);
+  --violet-400: 167, 139, 250, var(--opacity);
+  --violet-500: 139, 92, 246, var(--opacity);
+  --violet-600: 124, 58, 237, var(--opacity);
+  --violet-700: 109, 40, 217, var(--opacity);
+  --violet-800: 91, 33, 182, var(--opacity);
+  --violet-900: 76, 29, 149, var(--opacity);
+  --purple-50: 250, 245, 255, var(--opacity);
+  --purple-100: 243, 232, 255, var(--opacity);
+  --purple-200: 233, 213, 255, var(--opacity);
+  --purple-300: 216, 180, 254, var(--opacity);
+  --purple-400: 192, 132, 252, var(--opacity);
+  --purple-500: 168, 85, 247, var(--opacity);
+  --purple-600: 147, 51, 234, var(--opacity);
+  --purple-700: 126, 34, 206, var(--opacity);
+  --purple-800: 107, 33, 168, var(--opacity);
+  --purple-900: 88, 28, 135, var(--opacity);
+
+  --fuchsia-50: 253, 244, 255, var(--opacity);
+  --fuchsia-100: 250, 232, 255, var(--opacity);
+  --fuchsia-200: 245, 208, 254, var(--opacity);
+  --fuchsia-300: 240, 171, 252, var(--opacity);
+  --fuchsia-400: 232, 121, 249, var(--opacity);
+  --fuchsia-500: 217, 70, 239, var(--opacity);
+  --fuchsia-600: 192, 38, 211, var(--opacity);
+  --fuchsia-700: 162, 28, 175, var(--opacity);
+  --fuchsia-800: 134, 25, 143, var(--opacity);
+  --fuchsia-900: 112, 26, 117, var(--opacity);
+
+  --pink-50: 253, 242, 248, var(--opacity);
+  --pink-100: 252, 231, 243, var(--opacity);
+  --pink-200: 251, 207, 232, var(--opacity);
+  --pink-300: 249, 168, 212, var(--opacity);
+  --pink-400: 244, 114, 182, var(--opacity);
+  --pink-500: 236, 72, 153, var(--opacity);
+  --pink-600: 219, 39, 119, var(--opacity);
+  --pink-700: 190, 24, 93, var(--opacity);
+  --pink-800: 157, 23, 77, var(--opacity);
+  --pink-900: 131, 24, 67, var(--opacity);
+
+  --rose-50: 255, 241, 242, var(--opacity);
+  --rose-100: 255, 228, 230, var(--opacity);
+  --rose-200: 254, 205, 211, var(--opacity);
+  --rose-300: 253, 164, 175, var(--opacity);
+  --rose-400: 251, 113, 133, var(--opacity);
+  --rose-500: 244, 63, 94, var(--opacity);
+  --rose-600: 225, 29, 72, var(--opacity);
+  --rose-700: 190, 18, 60, var(--opacity);
+  --rose-800: 159, 18, 57, var(--opacity);
+  --rose-900: 136, 19, 55, var(--opacity);
+}
+
+// Override variables for light theme
+:root {
+  --opacity: 1;
+  --neutral: var(--neutral-500);
+  --reflectShadow: 178, 152, 220;
+
+  --primary: 24, 95, 225, var(--opacity);
+  --secondary: 0, 43, 78, var(--opacity);
+  --tertiary: 240, 249, 255, var(--opacity);
+  --c-white: 240, 249, 255, var(--opacity);
+  --c-grey: 148, 151, 161, var(--opacity);
+  --c-black: 41, 45, 51, var(--opacity);
+  --c-red: 193, 64, 64, var(--opacity);
+}
+
+html.light {
+  --mainAccent: var(--white);
+  --main: var(--light-300);
+  --mainWeakAnti: var(--light-500);
+
+  --antiMain: var(--dark-900);
+  --antiMainAccent: var(--black);
+}
+
+// Override variables for dark theme
+html.dark {
+  --mainAccent: var(--black);
+  --main: var(--dark-900);
+  --mainWeakAnti: var(--dark-700);
+
+  --antiMain: var(--light-50);
+  --antiMainAccent: var(--white);
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext", "dom.iterable"],
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    // "resolveModuleNameLiterals": "bundler",
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite/client", "unplugin-vue-macros/macros-global", "./router-meta.d.ts"],
+    "paths": {
+      "~/*": ["src/*"],
+      "@shared/*": ["src/shared/*"],
+      "@store/*": ["src/shared/store/*"]
+    }
+  },
+  "includes": ["src/**/*.ts", "src/**/*.d.ts", "./router-meta.d.ts"],
+  "exclude": ["dist", "node_modules"]
+}

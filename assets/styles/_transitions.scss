@@ -1,0 +1,101 @@
+/* Modal transition */
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.modal-enter-to,
+.modal-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-enter-active {
+  transition: all 0.5s ease;
+}
+
+.modal-leave-active {
+  transition: all 0.25s ease;
+}
+
+/* Subscribe transition */
+
+.subscribe-enter-from,
+.subscribe-leave-to {
+  transform: scaleY(0);
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-enter-to,
+.subscribe-leave-from {
+  transform: scaleY(1);
+  opacity: 1;
+  background-color: transparent;
+}
+
+.subscribe-enter-active,
+.subscribe-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Toggle animation */
+.toggle-animation-enter-active,
+.toggle-animation-leave-active {
+  transition: all 0.4s ease;
+}
+
+.toggle-animation-enter-from,
+.toggle-animation-leave-to {
+  opacity: 0;
+}
+
+/* List animation 1 */
+
+.list-animation-move,
+.list-animation-enter-active,
+.list-animation-leave-active {
+  transition: all 0.4s ease;
+}
+
+.list-animation-enter-from,
+.list-animation-leave-to {
+  opacity: 0;
+  transform: translateY(-75%);
+}
+
+.list-animation-enter-to,
+.list-animation-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.list-animation-leave-active {
+  position: absolute;
+}
+
+/* List animation y */
+
+.list-animation-y-move,
+.list-animation-y-enter-active,
+.list-animation-y-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.list-animation-y-enter-from,
+.list-animation-y-leave-to {
+  opacity: 0;
+  transform: translateY(-100%) scaleY(0);
+}
+
+.list-animation-y-enter-to,
+.list-animation-y-leave-from {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+
+.list-animation-y-leave-active {
+  position: absolute;
+}

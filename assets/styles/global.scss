@@ -1,0 +1,58 @@
+@import './_reset.scss';
+@import './_palette.scss';
+@import './_transitions.scss';
+@import './_shadow.scss';
+@import './_featured.scss';
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #272425,
+    #2c2226,
+    #302028,
+    #341e2b,
+    #371c2f,
+    #39223d,
+    #352a4d,
+    #2a335c,
+    #004871,
+    #005c77,
+    #006f6f,
+    #0f7e5c
+  );
+}
+
+#app {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.element-disabled {
+  opacity: 0.66;
+  pointer-events: none;
+  color: rgba(var(--c-grey));
+
+  &:hover {
+    transform: scale(1) !important;
+  }
+}
+
+.link {
+  color: rgba(var(--emerald-900));
+  background-color: rgba(var(--emerald-200));
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+  &:hover {
+    color: rgba(var(--emerald-200));
+    background-color: rgba(var(--emerald-900));
+    transform: scaleX(1.1);
+  }
+}
+
+a:active {
+  border: none;
+  outline: none;
+}
