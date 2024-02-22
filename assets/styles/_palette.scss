@@ -294,9 +294,24 @@ html[opacity='lowOpacity'] {
   --c-red: 193, 64, 64, var(--opacity);
 }
 
+// Override variables for light theme
+:root {
+  --opacity: 1;
+  --neutral: var(--neutral-500);
+  --reflectShadow: 178, 152, 220;
+
+  --primary: 24, 95, 225, var(--opacity);
+  --secondary: 0, 43, 78, var(--opacity);
+  --tertiary: 240, 249, 255, var(--opacity);
+  --c-white: 240, 249, 255, var(--opacity);
+  --c-grey: 148, 151, 161, var(--opacity);
+  --c-black: 41, 45, 51, var(--opacity);
+  --c-red: 193, 64, 64, var(--opacity);
+}
+
 html.light {
-  --mainAccent: var(--white);
   --main: var(--light-300);
+  --mainAccent: var(--white);
   --mainWeakAnti: var(--light-500);
 
   --antiMain: var(--dark-900);
@@ -305,8 +320,8 @@ html.light {
 
 // Override variables for dark theme
 html.dark {
-  --mainAccent: var(--black);
   --main: var(--dark-900);
+  --mainAccent: var(--black);
   --mainWeakAnti: var(--dark-700);
 
   --antiMain: var(--light-50);

@@ -24,7 +24,6 @@ export const useLocale = () => {
   })
 
   function addNewLocale(locale: TLocale, localeData: object) {
-    //@ts-expect-error 123
     i18n.global.setLocaleMessage(locale, localeData)
   }
 

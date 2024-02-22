@@ -22,7 +22,7 @@ export const dateTimeFormats = {
   },
 }
 
-export const numberFormats = {
+export const numberFormats= {
   en: {
     currency: {
       style: 'currency',
@@ -35,4 +35,4 @@ export const numberFormats = {
       currency: 'RUB',
     },
   },
-}
+} as const
