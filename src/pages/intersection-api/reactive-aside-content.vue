@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useReactiveAsideContent } from '@shared/composables/intersectionApi'
+import { useReactiveAsideContent } from '@shared/composables/intersection-api'
 
 const headers = ['Section1', 'Section2', 'Section3', 'Section4', 'Section5']
 const staticContent = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quidem

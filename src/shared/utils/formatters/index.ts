@@ -1,4 +1,4 @@
-export * from './toCapitalize'
-export * from './toCapitalizeEach'
-export * from './toCamelCase'
+export * from './to-capitalize'
+export * from './to-capitalize-each'
+export * from './to-camel-case'
 export * from './u'

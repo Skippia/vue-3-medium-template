@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: vue3_medium_template_dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+      target: development
+    command: npm run dev
+    env_file:
+      - environments/.env.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: on-failure

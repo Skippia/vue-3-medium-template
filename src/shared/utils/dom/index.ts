@@ -1,2 +1,2 @@
-export * from './getHtmlElement'
-export * from './getWidthHtmlElement'
+export * from './get-html-element'
+export * from './get-width-html-element'

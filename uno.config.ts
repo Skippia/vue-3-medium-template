@@ -24,7 +24,6 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       collections: {
-        fluent: () => import('@iconify-json/fluent/icons.json').then((i) => i.default),
         carbon: () => import('@iconify-json/carbon/icons.json').then((i) => i.default),
       },
       scale: 1,
@@ -40,17 +39,17 @@ export default defineConfig({
       },
     }),
     presetWebFonts({
-      fonts: {
+      /*   fonts: {
         sans: 'DM Sans',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
-      },
+      }, */
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   theme: {
     breakpoints: {
-      xsm: '320px',
+      xsm: '375px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

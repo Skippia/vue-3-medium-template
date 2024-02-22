@@ -1,28 +1,50 @@
 {
   "compilerOptions": {
+    "target": "es2017",
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015.Iterable",
+      "ES2018.AsyncIterable",
+      "ES2015",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+      "ES6",
+      "ESNext"
+    ],
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext", "dom.iterable"],
-    "strict": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    // "resolveModuleNameLiterals": "bundler",
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["vite/client", "unplugin-vue-macros/macros-global", "./router-meta.d.ts"],
     "paths": {
-      "~/*": ["src/*"],
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@assets/*": ["src/app/assets/*"],
       "@shared/*": ["src/shared/*"],
-      "@store/*": ["src/shared/store/*"]
-    }
+      "@store/*": ["src/shared/store/*"],
+      "@pages/*": ["src/pages/*"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "unplugin-vue-macros/macros-global",
+      "./src/shared/typings/shared-kernel.d.ts",
+      "./src/shared/typings/router-meta.d.ts"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "pretty": true
   },
-  "includes": ["src/**/*.ts", "src/**/*.d.ts", "./router-meta.d.ts"],
+  // "includes": ["src/**/*.ts", "src/**/*.d.ts", "./router-meta.d.ts"],
   "exclude": ["dist", "node_modules"]
 }

@@ -1,1 +1,1 @@
-export * from './useSmoothHeight'
+export * from './use-smooth-height'

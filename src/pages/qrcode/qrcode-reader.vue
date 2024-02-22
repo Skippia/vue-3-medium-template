@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import { QrcodeStream } from 'vue-qrcode-reader'
-import { AtomButton } from '@shared/components/generic/atoms/buttons'
-import { AtomOutput } from '@shared/components/generic/atoms/outputs'
-import { AtomSpinnerLoader } from '@shared/components/generic/atoms/loader'
-import { type DetectedBarcode, useQrCodeReader } from '@shared/composables/qrCode'
+import { type DetectedBarcode, useQrCodeReader } from '@shared/composables/qr-code'
+
+import { VAtomSpinnerLoader } from '@/shared/ui/atoms/loader'
+import { VAtomButton } from '@/shared/ui/atoms/buttons'
+import { VAtomOutput } from '@/shared/ui/atoms/outputs'
 
 const {
   selected,
@@ -55,27 +56,30 @@ function onReady(capabilities: MediaTrackCapabilities & { torch: unknown }) {
 </script>
 <template>
   <div class="flex flex-col items-center gap-y-5">
-    <nav class="flex flex-col items-center gap-y-3 my-3">
-      <AtomButton
+    <nav class="my-3 flex flex-col items-center gap-y-3">
+      <VAtomButton
         :is-disabled="isRenderQrCodeStream"
         class="bg-emerald-200 text-emerald-900"
         @click="activateQrCodeScanning"
-        >Start QR code scanning</AtomButton
+        >Start QR code scanning</VAtomButton
       >
-      <AtomButton :is-disabled="!isRenderQrCodeStream" class="bg-orange-200 text-orange-900" @click="stopQrCodeScanning"
-        >Stop QR code scanning</AtomButton
+      <VAtomButton
+        :is-disabled="!isRenderQrCodeStream"
+        class="bg-orange-200 text-orange-900"
+        @click="stopQrCodeScanning"
+        >Stop QR code scanning</VAtomButton
       >
 
-      <AtomButton
+      <VAtomButton
         v-if="TORCH_IS_SUPPORTED"
         :is-disabled="!isRenderQrCodeStream"
         class="bg-orange-200 text-orange-900"
         @click="toggleTorch"
-        >Toggle torch</AtomButton
+        >Toggle torch</VAtomButton
       >
     </nav>
 
-    <AtomSpinnerLoader
+    <VAtomSpinnerLoader
       v-if="isRenderQrCodeStream && isShowSpinner"
       size="large"
       color="rgba(var(--teal-50))"
@@ -94,6 +98,6 @@ function onReady(capabilities: MediaTrackCapabilities & { torch: unknown }) {
       @error="onError"
     />
 
-    <AtomOutput v-if="qrCodeLastValue" class="w-9/10" :value="qrCodeLastValue" />
+    <VAtomOutput v-if="qrCodeLastValue" class="w-9/10" :value="qrCodeLastValue" />
   </div>
 </template>

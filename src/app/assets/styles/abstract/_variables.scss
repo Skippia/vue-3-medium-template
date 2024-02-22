@@ -1,0 +1,24 @@
+// Custom variables
+:root {
+  --opacity: 1;
+  --neutral: var(--neutral-500);
+
+  --content-width: 1240px;
+  --max-width: 1920px;
+  --min-width: 375px;
+
+  --max-width-modal: 680px;
+  --max-width-aform: 608px;
+
+  --size-checkbox: 24px;
+
+  --background-color: #18171c;
+}
+
+// Override variables for light theme
+html.light {
+}
+
+// Override variables for dark theme
+html.dark {
+}

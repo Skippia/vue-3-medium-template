@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import OrganismContactForm from '~/modules/ExampleModule/components/OrganismContactForm.vue'
-import { TemplatePageRestrictor } from '@shared/components/generic/templates'
-import { AtomButton } from '@shared/components/generic/atoms/buttons'
-import { useNotificationStore } from '@shared/store/notifications'
 import { v4 as uuidv4 } from 'uuid'
 import { TTypeNotification } from '@shared/store/notifications/types'
+
+import { useNotificationStore } from '@/shared/store/notifications'
+import { VAtomButton } from '@/shared/ui/atoms/buttons'
+import { VTemplatePageRestrictor } from '@/shared/ui/templates'
+import OrganismContactForm from '@/modules/example-module/components/organism-contact-form.vue'
 
 // defineOptions({
 //   name: 'HomePage',
@@ -41,26 +42,20 @@ function clearAllNotifications() {
 
 <template>
   <main class="contacts">
-    <TemplatePageRestrictor class="contacts-container">
-      <OrganismContactForm v-tilt />
-      <div class="notification-buttons-container">
-        <AtomButton class="bg-emerald-500" @click="addNotification">Add notification</AtomButton>
-        <AtomButton class="bg-amber-500" @click="removeLastNotification">Remove last notification</AtomButton>
-        <AtomButton class="bg-sky-500" @click="removeFirstNotification">Remove first notification</AtomButton>
-        <AtomButton class="bg-red-500" @click="clearAllNotifications">Clear all notifications</AtomButton>
-      </div>
-    </TemplatePageRestrictor>
+    <OrganismContactForm v-tilt />
+    <div class="notification-buttons-container">
+      <VAtomButton class="bg-emerald-500" @click="addNotification">Add notification</VAtomButton>
+      <VAtomButton class="bg-amber-500" @click="removeLastNotification">Remove last notification</VAtomButton>
+      <VAtomButton class="bg-sky-500" @click="removeFirstNotification">Remove first notification</VAtomButton>
+      <VAtomButton class="bg-red-500" @click="clearAllNotifications">Clear all notifications</VAtomButton>
+    </div>
   </main>
 </template>
 
 <style lang="scss" scoped>
-.contacts-container {
+.contacts {
   @apply flex flex-col items-center gap-y-8 p-6 rounded-xl bg-white/60;
 }
-.contacts {
-  @apply flex flex-col items-center overflow-hidden;
-}
-
 .notification-buttons-container {
   @apply xsm:(flex flex-wrap gap-6 justify-center);
 }

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { AtomCubeLoader } from '@shared/components/generic/atoms/loader'
 import { v4 as uuidv4 } from 'uuid'
-import { useInfinityScroll } from '@shared/composables/intersectionApi'
+import { useInfinityScroll } from '@shared/composables/intersection-api'
+
+import { VAtomCubeLoader } from '@/shared/ui/atoms/loader'
 
 export type TBlog = {
   id: number | string
@@ -99,7 +100,7 @@ initInfinityScrollViaVueUse()
     <div v-for="item in data" :key="item.id" class="card-blog">
       {{ item }}
     </div>
-    <AtomCubeLoader v-if="isLoading" />
+    <VAtomCubeLoader v-if="isLoading" />
   </div>
 </template>
 

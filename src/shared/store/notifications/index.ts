@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+
 import { TNotification } from './types'
 
 const STORE_NOTIFICATION_NAME = 'notification'

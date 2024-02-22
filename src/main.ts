@@ -1,19 +1,27 @@
-import App from './App.vue'
-import { directivesMap } from './shared/directives'
-import { initializeDirectives, initializeRouter, initializeStore } from '../initializators'
-import { routes } from './pages/routes'
 import '../assets/styles/global.scss'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
-import { useLocale } from './shared/composables/i18n/useLocales'
+import { Pinia } from 'pinia'
 
-const app = createApp(App)
+import { Router } from 'vue-router'
+
+import App from './app/App.vue'
+
+import { useLocale } from './shared/composables/i18n'
+
+import { initializeApp } from './app/providers/initialize-app'
 
 const { i18n, setCurrentLocale } = useLocale()
 
-initializeDirectives(app, directivesMap)
-initializeRouter(app, routes, { setCurrentLocale })
-initializeStore(app)
+const app = createApp(App)
 
-app.use(i18n)
-app.mount('#app')
+function startApp(app: ReturnType<typeof createApp>, { router, store }: { router: Router; store: Pinia }) {
+  app.use(router)
+  app.use(store)
+  app.use(i18n)
+  app.mount('#app')
+}
+
+initializeApp(app, { setCurrentLocale }).then(({ store, router }) => {
+  startApp(app, { router, store })
+})
