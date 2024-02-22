@@ -59,13 +59,22 @@ export default defineConfig({
       '4xl': '2240px',
     },
     colors: {
+      background: 'rgba(var(--gray-500))',
+      neutral: 'rgba(var(--neutral))',
       primary: 'rgba(var(--primary))',
       secondary: 'rgba(var(--secondary))',
       tertiary: 'rgba(var(--tertiary))',
-      cWhite: 'rgba(var(--c-white))',
-      cGrey: 'rgba(var(--c-grey))',
-      cBlack: 'rgba(var(--c-black))',
-      cRed: 'rgba(var(--c-red))',
+      cwhite: 'rgba(var(--c-white))',
+      cgrey: 'rgba(var(--c-grey))',
+      cblack: 'rgba(var(--c-black))',
+      cred: 'rgba(var(--c-red))',
+      //
+      main: 'rgba(var(--main))',
+      mainAccent: 'rgba(var(--mainAccent))',
+      mainWeakAnti: 'rgba(var(--mainWeakAnti))',
+      //
+      antiMain: 'rgba(var(--antiMain))',
+      mainAntiMainAccent: 'rgba(var(--antiMainAccent))',
     },
   },
 })

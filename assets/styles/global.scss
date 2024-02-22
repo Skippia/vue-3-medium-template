@@ -29,16 +29,6 @@ body {
   height: 100%;
 }
 
-.element-disabled {
-  opacity: 0.66;
-  pointer-events: none;
-  color: rgba(var(--c-grey));
-
-  &:hover {
-    transform: scale(1) !important;
-  }
-}
-
 .link {
   color: rgba(var(--emerald-900));
   background-color: rgba(var(--emerald-200));
