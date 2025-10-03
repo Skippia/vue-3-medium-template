@@ -1,19 +1,15 @@
 <script setup lang="ts">
 import { VAtomToggleDarkMode } from '../atoms/switches'
-import { MoleculeLanguageLink } from '../molecules'
 </script>
 
 <template>
   <header class="header">
     <nav class="link-container">
       <router-link class="link" to="/">Home</router-link>
-      <router-link class="link" to="/qrcode-generator">Qr code generator</router-link>
-      <router-link class="link" to="/qrcode-reader">Qr code reader</router-link>
       <router-link class="link" to="/intersection-api/reactive-aside-content">Reactive aside content</router-link>
       <router-link class="link" to="/intersection-api/infinity-scroll">Infinity Scroll</router-link>
 
       <VAtomToggleDarkMode class="header__theme-toggler" />
-      <MoleculeLanguageLink class="my-5 w-fit" />
     </nav>
   </header>
 </template>

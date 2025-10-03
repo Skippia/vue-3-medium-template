@@ -15,9 +15,6 @@ export const useStoreContentPage = defineStore(STORE_CONTENT_PAGE, {
   actions: {
     loadGeneralData() {
       this._setLoading(true)
-
-      // action
-
       this._setLoading(false)
     },
     _setLoading(status: boolean) {

@@ -4,8 +4,6 @@ import { TTypeNotification } from '@shared/store/notifications/types'
 
 import { useNotificationStore } from '@/shared/store/notifications'
 import { VAtomButton } from '@/shared/ui/atoms/buttons'
-import { VTemplatePageRestrictor } from '@/shared/ui/templates'
-import OrganismContactForm from '@/modules/example-module/components/organism-contact-form.vue'
 
 // defineOptions({
 //   name: 'HomePage',
@@ -42,7 +40,6 @@ function clearAllNotifications() {
 
 <template>
   <main class="contacts">
-    <OrganismContactForm v-tilt />
     <div class="notification-buttons-container">
       <VAtomButton class="bg-emerald-500" @click="addNotification">Add notification</VAtomButton>
       <VAtomButton class="bg-amber-500" @click="removeLastNotification">Remove last notification</VAtomButton>

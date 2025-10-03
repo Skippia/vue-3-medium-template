@@ -10,18 +10,6 @@ export const routes = [
     component: Home,
   },
   {
-    path: '/qrcode-generator',
-    name: RouteNames.QR_CODE_GENERATOR,
-    meta: { title: 'Qr code generator', isShowTemplatePage: true },
-    component: () => import('./qrcode/qrcode-generator.vue'),
-  },
-  {
-    path: '/qrcode-reader',
-    name: RouteNames.QR_CODE_READER,
-    meta: { title: 'Qr code reader', isShowTemplatePage: true },
-    component: () => import('./qrcode/qrcode-reader.vue'),
-  },
-  {
     path: '/intersection-api',
     children: [
       {

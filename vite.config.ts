@@ -6,7 +6,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 // import DefineOptions from 'unplugin-vue-define-options/vite'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 import path from 'node:path'
 
@@ -53,10 +52,6 @@ export default defineConfig({
           },
         }),
       },
-    }),
-
-    VueI18nPlugin({
-      runtimeOnly: false,
     }),
 
     // https://github.com/antfu/unplugin-auto-import
